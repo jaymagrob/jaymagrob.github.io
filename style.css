@@ -85,3 +85,18 @@ i {
   background-size: cover;
 }
 
+.underline {
+  border-bottom: solid 5px #e31b6d;
+  width: 3em;
+}
+.job {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.dot {
+  border: 5px solid #e31b6d;
+  border-radius: 100%;
+}
+
+
