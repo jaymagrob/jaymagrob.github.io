@@ -24,6 +24,10 @@ section {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%2328324e' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
 }
 
+p {
+  max-width: 600px;
+}
+
 .hero-body {
   min-height: 100vh;
   background-color: #252934;
@@ -31,7 +35,20 @@ section {
   font-size: 1.5em;
   color: #fff;
 }
+.list-padding {
+  padding: 3px 0;
+}
+ul {
+  list-style-type:none;
+    padding:0;
+    width:100%;
+    text-align:center;
+}
 
+
+li {
+  padding: 5px 0px;
+}
 .nav {
   background-color: #252934;
   padding: 5px;
@@ -81,11 +98,13 @@ i {
 }
 
 .parrallax {
-  height: 200px;
+  height: 75px;
   background-attachment: fixed;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
+  border-top: #e31b6d solid 4px;
+  border-bottom: #e31b6d solid 4px;
 }
 
 .parrallax1 {
@@ -127,4 +146,67 @@ i {
   margin: 10px;
 }
 
+.icon-contact {
+  color: #fff;
+}
 
+.wrapper {
+  padding-top: 25px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.icon {
+  padding: 3px 10px;
+}
+.icon i {
+  font-size: 3em;
+}
+
+.icon:hover {
+  color: #e31b6d;
+}
+
+a > i {
+  font-size: 3em;
+}
+
+a > i:hover {
+  color: #e31b6d;
+}
+
+img {
+  max-width: 600px;
+}
+
+.clickup a i {
+  color: #e31b6d;
+}
+
+.clickup:hover a i {
+  color: #04c2c9;
+}
+
+.icon-wrapper {
+  padding: 10px 0;
+}
+
+.icon-wrapper a {
+  padding: 10px;
+}
+
+.info-box-footer {
+  padding: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 90vw;
+  }
+
+  section {
+    padding: 20px 20px;
+  }
+}
