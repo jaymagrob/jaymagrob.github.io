@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+a:visited {
+  color: #fff;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -78,11 +82,34 @@ i {
 
 .parrallax {
   height: 200px;
-  background-image: url(assets/code1.png);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.parrallax1 {
+  background-image: url(assets/code1.png);
+}
+
+.parrallax2 {
+  background-image: url(assets/code1.png);
+}
+
+.parrallax3 {
+  background-image: url(assets/code2.png);
+}
+
+.parrallax4 {
+  background-image: url(assets/code2.png);
+}
+
+.parrallax5 {
+  background-image: url(assets/code3.png);
+}
+
+.parrallax6 {
+  background-image: url(assets/code3.png);
 }
 
 .underline {
@@ -97,6 +124,7 @@ i {
 .dot {
   border: 5px solid #e31b6d;
   border-radius: 100%;
+  margin: 10px;
 }
 
 
