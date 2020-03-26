@@ -4,11 +4,12 @@ function init() {
   const domHeroSize = document.querySelector('#hero-body')
   const domNav = document.querySelector('nav')
   const domNavLists = document.querySelectorAll('nav ul li')
+  const domInput = document.querySelector('input')
 
   //event listeners
   domNavLists.forEach(i => {
     i.addEventListener('click', () => {
-      domNav.classList.add('hidden')
+      domInput.checked = false
     })
   })
 
@@ -16,13 +17,13 @@ function init() {
     document.location.href = '#bio'
   })
 
-  window.addEventListener('scroll',(e) => {
-    if (window.scrollY >= domHeroSize.scrollHeight) {
-      domNav.classList.remove('hidden')
-    } else {
-      domNav.classList.add('hidden')
-    }
-  })
+  // window.addEventListener('scroll',(e) => {
+  //   if (window.scrollY >= domHeroSize.scrollHeight) {
+  //     domNav.classList.remove('hidden')
+  //   } else {
+  //     domNav.classList.add('hidden')
+  //   }
+  // })
 }
 
 window.addEventListener('DOMContentLoaded', init)
