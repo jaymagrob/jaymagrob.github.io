@@ -20,6 +20,7 @@ body {
   height: 100%;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
+  font-display: swap;
 }
 
 section {
