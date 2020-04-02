@@ -21,6 +21,7 @@ body {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-display: swap;
+  line-height: 2;
 }
 
 section {
@@ -158,6 +159,7 @@ i {
 
 .icon-contact {
   color: #fff;
+  padding: 10px;
 }
 
 .wrapper {
@@ -212,15 +214,6 @@ img {
 
 
 
-@media only screen and (max-width: 600px) {
-  img {
-    width: 90vw;
-  }
-
-  section {
-    padding: 20px 20px;
-  }
-}
 
 #menuToggle
 {
@@ -274,8 +267,8 @@ nav {
 }
 
 /*
- * Just a quick hamburger
- */
+* Just a quick hamburger
+*/
 #menuToggle span
 {
   display: block;
@@ -292,8 +285,8 @@ nav {
   transform-origin: 4px 0px;
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  opacity 0.55s ease;
 }
 
 #menuToggle span:first-child
@@ -307,9 +300,9 @@ nav {
 }
 
 /* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
+* Transform all the slices of hamburger
+* into a crossmark.
+*/
 #menuToggle input:checked ~ span
 {
   opacity: 1;
@@ -318,8 +311,8 @@ nav {
 }
 
 /*
- * But let's hide the middle one.
- */
+* But let's hide the middle one.
+*/
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
@@ -327,26 +320,24 @@ nav {
 }
 
 /*
- * Ohyeah and the last one should go the other direction
- */
+* Ohyeah and the last one should go the other direction
+*/
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
 /*
- * Make this absolute positioned
- * at the top left of the screen
- */
+* Make this absolute positioned
+* at the top left of the screen
+*/
 #menu
 {
   position: absolute;
   width: 100vw;
   height: 100vh;
   margin: -100px 0 0 -50px;
-  padding: 50px;
   padding-top: 125px;
-  
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -365,9 +356,29 @@ nav {
 }
 
 /*
- * And let's slide it in from the left
- */
+* And let's slide it in from the left
+*/
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 90vw;
+  }
+
+  section {
+    padding: 20px 20px;
+  }
+
+  #menu li
+{
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: bold;
+}
 }
