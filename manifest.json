@@ -1,0 +1,16 @@
+{
+  "name": "John Magnus Robertson: Edinburgh based Web Developer",
+  "description": "Edinburgh based web developer focusing on React.js, Node.js, JavaScript & Python. Projects have been build in VanillaJS, MERN stack and Django. Need an Edinburgh-based developer? Try John Magnus Robertson.",
+  "version": "0.0.0.1",
+  "manifest_version": 1,
+  "icons":
+    [
+      {"src": "assets/favicon/android-icon-192x192.png", "sizes": "192x192", "type": "image/png"},
+      {"src": "assets/favicon/favicon-32x32.png", "sizes": "32x32", "type": "image/png"},
+      {"src": "assets/favicon/favicon-96x96.png", "sizes": "96x96", "type": "image/png"},
+      {"src": "assets/favicon/favicon-16x16.png", "sizes": "16x16", "type": "image/png"}
+    ]
+}
+
+
+
